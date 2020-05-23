@@ -1,0 +1,186 @@
+%-------------------------
+% Resume in Latex
+% Author : Sourabh Bajaj
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{tfrupee}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\renewcommand\familydefault{\sfdefault}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+\titlespacing{\section}{0pt}{5ex}{2.3ex plus .2ex}
+
+% Hyper links
+\definecolor{url_blue}{rgb}{0.1,0.0,0.95}
+\hypersetup{
+  urlcolor=url_blue, 
+  colorlinks=true
+}
+    
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \ifx#1\empty
+        #2
+    \else
+        \textbf{#1}{: #2 \vspace{-2pt}}
+    \fi
+  }
+}
+
+\newcommand{\resumeSubheading}[5]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \ifx#5\empty
+        % -- Additional field empty --
+        \textbf{#1} & #2 \\
+        \textnormal{\small#3} & \small#4 \\
+      \else
+        % -- Additional field not empty --
+        \textbf{#1} & #2 \\
+        \textnormal{\small#3} & \small#4 \\
+        \textnormal{\small#5} & \empty \\
+      \fi
+    \end{tabular*}\vspace{-5pt}
+    
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{{\Large Abhijeet Viswakumar}} & GitHub : \href{https://github.com/abhijeetviswa}{abhijeetviswa} \\
+  \href{mailto:abhijeetviswa@gmail.com}{abhijeetviswa@gmail.com} & Mobile : +91-8078-20-4438  \\
+\end{tabular*}
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Birla Institute of Technology and Science}{Hyderabad, India}
+      {Bachelor of Engineering in Electronics and Instrumentation;  GPA: 7.13/10.0}{Aug. 2018 -- Present}
+      {Additional Courses: Computer Programming, Network Programming, Computer Graphics}
+      {\empty}
+    \resumeSubheading
+      {Amrita Vidyalayam}{Palakkad, India}
+      {Class XII CBSE Board; Score: 95.8\%}{March 2017}
+      {Specialization: Physics, Chemistry, Maths}
+    \resumeSubheading
+      {Amrita Vidyalayam}{Palakkad, India}
+      {Class X CBSE Board; GPA: 10}{March 2015}
+      {\empty}
+  \resumeSubHeadingListEnd
+
+%--------PROGRAMMING SKILLS------------
+\section{Programming Skills}
+ \resumeSubHeadingListStart
+    \resumeSubItem{Languages}{Python, Java, SQL, Visual Basic 6, C, C++}
+    \resumeSubItem{Frameworks}{Django, Android}
+    \resumeSubItem{Software and Technologies}{Git, OpenGL, Nginx}
+ \resumeSubHeadingListEnd
+
+  
+%-----------PROJECTS-----------------
+\section{Projects and Open Source Contributions}
+  \resumeSubHeadingListStart
+
+      % --- Django ---------
+      \resumeSubItem{Django}{Python Web Development Framework}
+        \resumeItemListStart
+          \resumeSubItem{\empty}{Reported and fixed multiple bugs, including release blockers: \href{https://code.djangoproject.com/ticket/30953}{\#30953}, \href{https://code.djangoproject.com/ticket/31246}{\#31246}, \href{https://code.djangoproject.com/ticket/29129}{29129}}
+          \resumeSubItem{\empty}{Reported and created documentation patches: \href{https://code.djangoproject.com/ticket/28290}{\#28290}, \href{https://code.djangoproject.com/ticket/31126}{\#31126}}
+        \resumeItemListEnd
+      
+      % --- CMS Android ----
+      \resumeSubItem{CMS-Android}{Custom \href{https://github.com/abhijeetviswa/CMS-Android}{Open Source} Moodle client}
+        \resumeItemListStart
+          \resumeSubItem{\empty}{Maintainer of the Open Source project.}
+          \resumeSubItem{\empty}{Helped fellow students start contributing to Open Source projects.}
+          \resumeSubItem{\empty}{Used actively by 3,500 students to subscribe to course contents.}
+        \resumeItemListEnd
+
+      % --- SmartCampus ----
+      \resumeSubItem{SmartCampus}{Payment Portal for Campus Students}
+        \resumeItemListStart
+          \resumeSubItem{\empty}{Built the backend in Python using Django and Django Rest Framework.}
+          \resumeSubItem{\empty}{Database of choice was PostgreSQL.}
+          \resumeSubItem{\empty}{Postman was used to test out the API.}
+          \resumeSubItem{\empty}{Deployed to DigitalOcean.}
+          \resumeSubItem{\empty}{Processesd 160,000 transactions worth \rupee~1.5 million ({\raise.17ex\hbox{$\scriptstyle\mathtt{\sim}$}}{}\$22,000) since its launch in September 2019.}
+        \resumeItemListEnd
+        
+  \resumeSubHeadingListEnd
+    
+%-----------EXTRA CURRICULARS-----------
+\section{Extra Curriculars}
+  \resumeSubHeadingListStart
+    % ---- CCIT -----
+    \resumeSubItem{\empty}{Active student member of \href{https://universe.bits-pilani.ac.in/Hyderabad/Computercentre}{Computer Center - Information Technology}, the body which facilitates access to IT resources and communications networks amongst the user community within the BITS Pilani, Hyderabad Campus.}
+    
+    % --- Crux ------
+    \resumeSubItem{\empty}{Active student Member of \href{https://crux-bphc.github.io}{Crux} - The Programming and Computing Club of BITS Pilani, Hyderabad Campus.}
+    
+    % --- ELAS + JC ---
+    \resumeSubItem{\empty}{Active student member of English Language Activities Society and Journal Club of BITS Pilani, Hyderabad Campus.}
+    
+    \resumeSubItem{\empty}{Active student member of The Wall Street Club of BITS Pilani, Hyderabad Campus.}
+  \resumeSubHeadingListEnd
+  
+%---------------------------------------
+\end{document}
