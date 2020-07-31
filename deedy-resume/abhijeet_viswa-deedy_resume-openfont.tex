@@ -1,0 +1,239 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.2 (16/9/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\documentclass[]{abhijeet_viswa-deedy-resume-openfont}
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+\fancyhf{}
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\namesection{Abhijeet}{Viswakumar}{
+\href{mailto:abhijeetviswa@gmail.com}{abhijeetviswa@gmail.com} | +91 807 820 4438}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.25\textwidth}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education}
+
+\subsection{BITS Pilani}
+\descript{B.E. Electronics and Instrumentation Engineering (Hons.)}
+\location{July 2022 | Hyderabad, India}
+\location{Current CGPA: 7.13/10}
+\subsectionsep
+
+\subsection{Amrita Vidyalayam}
+\descript{CBSE Class XII, 95.8\%}
+\location{March 2017 | Palakkad, India}
+\subsectionsep
+
+\subsection{Amrita Vidyalayam}
+\descript{CBSE Class X, 10 GPA}
+\location{March 2015 | Palakkad, India}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \section{Coursework}
+% \subsection{Graduate}
+% Advanced Machine Learning \\
+% Open Source Software Engineering \\
+% Advanced Interactive Graphics \\
+% Compilers + Practicum \\
+% Cloud Computing \\
+% Evolutionary Computation \\
+% Defending Computer Networks \\
+% Machine Learning \\
+% \sectionsep
+%
+% \subsection{Undergraduate}
+% Information Retrieval \\
+% Operating Systems \\
+% Artificial Intelligence + Practicum \\
+% Functional Programming \\
+% Computer Graphics + Practicum \\
+% {\footnotesize \textit{\textbf{(Research Asst. \& Teaching Asst 2x) }}} \\
+% Unix Tools and Scripting \\
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\subsection{Programming}
+\itemlabel{Proficient}
+\begin{itemize*}
+ \item Python
+ \item Java
+ \item VB6
+\end{itemize*}
+\subsectionsep
+
+\itemlabel{Familiar}
+\begin{itemize*}
+ \item SQL
+ \item C
+ \item C++
+\end{itemize*}
+\subsectionsep
+
+\subsection{Tools \& Technologies}
+\begin{itemize*}
+ \item Django
+ \item Android
+ \item Git
+ \item Docker
+ \item REST
+ \item Postman
+\end{itemize*}
+
+% Django \textbullet{} Android \textbullet{} Git
+% \textbullet{} Docker \textbullet{} REST \textbullet Postman
+\sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Links}
+Github:// \mbox{\href{https://github.com/abhijeetviswa}{\bf abhijeetviswa}}\\[3pt]
+LinkedIn://  \mbox{\href{https://www.linkedin.com/in/abhijeet-viswa-191486135/}{\bf abhijeetviswa}} \\
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.70\textwidth}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience}
+\runsubsection{Django}
+\descript{| Open Source Contributor}
+\location{January 2020 – Present}
+\sectionsep
+\begin{tightemize}
+\item \href{https://code.djangoproject.com/ticket/31246}{Reported} and \href{https://github.com/django/django/pull/12434}{fixed}
+a release blocking bug related to concurrent select and update on tables.
+\item \href{https://github.com/django/django/pull/12496}{Fixed} a bug related to redundant SQL queries being generated when
+inserting a new field.
+\item Made other \href{https://github.com/django/django/pulls?q=abhijeetviswa}{contributions} to improve the Django codebase and documentation.
+\end{tightemize}
+\subsectionsep
+
+\runsubsection{\href{https://www.cuemath.com}{Cuemath}}
+\descript{| Summer Intern }
+\location{May 2020 – June 2020 | Bangalore, India}
+
+\begin{tightemize}
+\item Worked on creating Spatial Reasoning puzzles team at Cuemath aimed at
+school children (6-12 years)
+
+\item Worked on the backend of a web platform to crowdsource useful learning resources and materials related to any topics.
+Backend was built using Django along with Django Rest Framework.
+\end{tightemize}
+\sectionsep  % end of section
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     PROJECTS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\sectionsep
+\sectionsep  % Force some extr aspace here
+\section{Projects}
+\runsubsection{CMS-Android}
+\descript{| Open Source \href{https://moodle.org}{Moodle} Client for Android}
+\location{May 2019 - Present | Github: {\href{https://github.com/crux-bphc/CMS-Android}{crux-bphc/CMS-Android}}}
+\vspace{\itemsep}
+\justifiedtextblock{Maintainer of CMS-Android, an open source Moodle client for Android. The app is a vital part of student academics,
+allowing a student to subcribe to course updates from their professor. The app is used by more than 3,000 students.
+The app is regularly updated to fix user reported bugs as well as additional quality-of-life improvements.}
+\RaggedRight
+\sectionsep
+
+\runsubsection{SmartCampus}
+\descript{| A Mobile app for a Smarter Campus}
+\location{June 2019 - Present}
+\vspace{\itemsep}
+\justifiedtextblock{Led the development of the backend of SmartCampus a mobile app service meant to improve campus life by making it more ``smart''.
+Currently, SmartCampus acts as a payment gateway to facilitate seamless transactions between students and shops within the campus.
+The backend is built using Django and Django REST Framework, with PostgreSQL as the database.
+Since launch, SmartCampus has facilitied 150,000+ transactions worth ~\rupee1.5 million (~\$22,000).}
+\end{minipage}
+\end{document}
+
+
