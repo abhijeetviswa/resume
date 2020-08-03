@@ -62,8 +62,9 @@
 \usepackage{titlesec}
 \titlespacing{\section}{0pt}{0pt}{3pt}
 \titlespacing{\subsection}{0pt}{0pt}{3pt}
-\newcommand{\sectionsep}{\vspace{15pt}}
-\newcommand{\subsectionsep}{\vspace{10pt}}
+\newcommand{\primarysectionsep}{\vspace{15pt}}
+\newcommand{\secondarysectionsep}{\vspace{12pt}}
+\newcommand{\subsectionsep}{\vspace{8pt}}
 
 % Headings command
 \titleformat{\section}{\color{headings}
@@ -74,7 +75,7 @@
 \color{subheadings}\fontspec[Path=fonts/lato/, Extension = .ttf]{Lato-Bol}\fontsize{12pt}{12pt}\selectfont\bfseries\raggedright\uppercase}{}{0em}{\vspace{.05cm}}
 
 \newcommand{\runsubsection}[1]{
-\color{subheadings}\fontspec[Path=fonts/lato/, Extension = .ttf]{Lato-Bol}\fontsize{12pt}{12pt}\selectfont\bfseries\uppercase {#1} \normalfont}
+\color{subheadings}\raggedright\fontspec[Path=fonts/lato/, Extension = .ttf]{Lato-Bol}\fontsize{12pt}{12pt}\selectfont\bfseries\uppercase {#1} \normalfont}
 
 % Descriptors command
 \newcommand{\descript}[1]{
@@ -87,13 +88,12 @@
 % Bullet Lists with fewer gaps command
 \newenvironment{tightemize}{\justify
 \vspace{-\topsep}\begin{itemize}\itemsep1pt \parskip0pt \parsep0pt}
-{\end{itemize}\vspace{-\topsep}}
+{\end{itemize}}
 
 % Label command
 \newcommand{\itemlabel}[1]{
 \color{headings}\raggedright\fontspec[Path = fonts/raleway/]{Raleway-Medium}\fontsize{11pt}{11pt}\selectfont {#1\\} \normalfont}
 
 % A block of text
-\newcommand{\justifiedtextblock}[1]{
-\justifying\noindent#1\RaggedRight}
+\newcommand{\justifiedtextblock}[1]{\justify{#1}\raggedright}
 
