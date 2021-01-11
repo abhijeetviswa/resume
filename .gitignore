@@ -13,3 +13,4 @@
 .*.lb
 *.dvi
 .kile/
+*.synctex.gz
