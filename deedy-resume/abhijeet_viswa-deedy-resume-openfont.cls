@@ -26,6 +26,9 @@
 
 % Set main fonts
 \usepackage{fontspec}
+% FIXME: This will break when texlive version changes. Find a better way.
+\defaultfontfeatures{Path = /usr/local/texlive/2022/texmf-dist/fonts/opentype/public/fontawesome/}
+\usepackage{fontawesome}
 \setmainfont[Color=primary, Path = fonts/lato/,BoldItalicFont=Lato-RegIta,BoldFont=Lato-Reg,ItalicFont=Lato-LigIta]{Lato-Lig}
 \setsansfont[Scale=MatchLowercase,Mapping=tex-text, Path = fonts/raleway/]{Raleway-ExtraLight}
 
@@ -34,14 +37,14 @@
 \fontspec{DejaVuSans-ExtraLight.ttf}\symbol{"20B9}\normalfont}
 
 % Date command
-% \usepackage[absolute]{textpos}
-% \usepackage[UKenglish]{isodate}
-% \setlength{\TPHorizModule}{1mm}
-% \setlength{\TPVertModule}{1mm}
-% \newcommand{\lastupdated}{\begin{textblock}{60}(155,5)
-% \color{date}\fontspec[Path = fonts/raleway/]{Raleway-ExtraLight}\fontsize{8pt}{10pt}\selectfont
-% Last Updated on \today
-% \end{textblock}}
+\usepackage[absolute]{textpos}
+\usepackage[UKenglish]{isodate}
+\setlength{\TPHorizModule}{1mm}
+\setlength{\TPVertModule}{1mm}
+\newcommand{\lastupdated}{\begin{textblock}{60}(155,5)
+\color{date}\fontspec[Path = fonts/raleway/]{Raleway-ExtraLight}\fontsize{8pt}{10pt}\selectfont
+Last Updated on \today
+\end{textblock}}
 
 % Name command
 \newcommand{\namesection}[3]{
