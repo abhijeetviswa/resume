@@ -1,0 +1,7 @@
+au FileType plaintex,tex
+    \ set tabstop=2 |
+    \ set softtabstop=4 |
+    \ set shiftwidth=4 |
+    \ set textwidth=100 |
+    \ set autoindent |
+    \ set fileformat=unix
