@@ -1,10 +1,10 @@
 # Default target
 resume: resume.tex resume.cls
-	xelatex resume.tex
+	xelatex $(OPTS) resume.tex
 
-watch: 
+watch:
 	while true; do \
-        make resume; \
+        OPTS=-interaction=nonstopmode make resume; \
         inotifywait -qre close_write .; \
     done
 
