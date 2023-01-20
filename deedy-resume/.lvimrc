@@ -5,3 +5,5 @@ au FileType plaintex,tex
     \ set textwidth=100 |
     \ set autoindent |
     \ set fileformat=unix
+
+autocmd BufWritePre * :%s/\s\+$//e
