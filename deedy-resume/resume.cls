@@ -10,9 +10,12 @@
 
 % Package Imports
 \usepackage[hmargin=1.25cm, vmargin=0.75cm]{geometry}
-\usepackage{hyperref}
 \usepackage[inline]{enumitem}
 \usepackage{ragged2e}
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+
+% HyColor Redefinition - Required for fontspec default colour to work with hyperref colours
+\def\HyColor@@@@UseColor#1\@nil{\addfontfeatures{Color=#1}}
 
 % Color definitions
 \usepackage[usenames,dvipsnames]{xcolor}
