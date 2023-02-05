@@ -169,7 +169,8 @@
 \section{About Me}
 \noindent \RaggedRight \normalfont
 I am a passionate software engineer with hands-on experience on backend and
-infrastructure development on AWS. Open Source enthusiast and contributor.
+infrastructure development on AWS. I'm also an Open Source enthusiast and
+contributor.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
@@ -188,28 +189,34 @@ infrastructure development on AWS. Open Source enthusiast and contributor.
 
 \runsubsection{Amazon Web Services (AWS)}
 \descript{| Software Engineer}
-\location{February 2022 - January 2023 | Bangalore, India}
-\subsectionsep
+\location{February 2022 - Present | Bangalore, India}
+\vspace{2pt}
+\location{Tech: Python, Typescript, EC2, Lambda, DynamoDB, Fargate}
+\vspace{10pt}
 \begin{tightemize}
-\item Created a service to parse WAN maintenance notification emails and
-automatically suppress alarms/monitors.
-\item Created internal tools to automate network configuration regression
-testing on physical network switches.
-\item Created internal tools to easily create virtualized Physical Store
-networks on EC2 instances.
-\item Worked on integrating virtualized networks with automated regression
-tests and FullCD pipelines.
+\item  Created a service to automatically parse maintenace emails and supresses
+relevant alarms. Resulted in reduced operational load and improved efficency
+of maintenace processes.
+\item Reduced weekly effort spent on running by automating manual and protracted regression tests.
+This increased team productivity and impact by freeing up time and resources for other tasks.
+\item Worked on an easily deployable network virtualization product that was integrated with
+automated network CI/CD and regression testing pipelines. Reduced cost by replacing physical
+network labs.
 \end{tightemize}
 \subsectionsep
 
 \runsubsection{Oracle}
 \descript{| Software Engineering Intern}
 \location{June 2021 - July 2021 | Bangalore, India}
+\vspace{2pt}
+\location{Tech: C, Oracle Solaris}
+\vspace{1pt}
 \begin{tightemize}
-\item Migrated Oracle Solaris's implementation of the Unix
-utility ``vmstat(8)'' from \textit{kstat2} to \textit{StatStore}. Improved accessibility of historical data, performance, and improved maintainability of codebase.
+\item Improved performance and accessibility of historical data by adding support for
+alternative datastores in the `vmstat` command for Oracle Solaris.
+\item Worked on improving documentation and man pages for CLI tools.
 \end{tightemize}
-% \primarysectionsep  % end of section
+\subsectionsep  % end of section
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     OPEN SOURCE
@@ -217,38 +224,51 @@ utility ``vmstat(8)'' from \textit{kstat2} to \textit{StatStore}. Improved acces
 \section{Open Source Contributions}
 \runsubsection{Django}
 \descript{| Python Web Framework}
-\location{January 2020 – Present | GitHub PRs:
-		\href{https://github.com/django/django/pulls?q=author\%3Aabhijeetviswa+state\%3Amerged}{django/django/pulls}}
+\location{References:
+	\href{https://github.com/django/django/pulls?q=author\%3Aabhijeetviswa+state\%3Amerged}{GitHub PRs}}
+\vspace{2pt}
+\location{Tech: Python, Django}
+\vspace{1pt}
 \begin{tightemize}
-\item {\href{https://code.djangoproject.com/ticket/31246}{Reported} and \href{https://github.com/django/django/pull/12434}{fixed}
-a release blocking bug related to concurrent select and update on tables.}
-\item \justifying\href{https://github.com/django/django/pull/12496}{Fixed} a bug related to redundant SQL queries being generated when
-inserting a new row in a table.
+\item \href{https://code.djangoproject.com/ticket/31246}{Reported} and \href{https://github.com/django/django/pull/12434}{fixed}
+a release blocking bug related to concurrent select and update on tables. This fixed a previously undiscovered data corrupting bug.
+\item \justifying\href{https://github.com/django/django/pull/12496}{Fixed} a bug related to redundant SQL queries being generated.
+This improved database performance when inserting new rows into tables.
 \item \justifying \href{https://github.com/django/django/pulls?q=author\%3Aabhijeetviswa}{Improved} Django codebase and documentation.
 \end{tightemize}
-\primarysectionsep
+\subsectionsep
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     PROJECTS
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Projects}
-\runsubsection{CMS-Android}
-\descript{| Open Source \href{https://moodle.org}{Moodle} Client for Android}
-\location{May 2019 - Present | GitHub: {\href{https://github.com/crux-bphc/CMS-Android}{crux-bphc/CMS-Android}}}
+\runsubsection{SmartCampus}
+\descript{| A Mobile app for a Smarter Campus}
+\location{References: \href{https://play.google.com/store/apps/details?id=com.smartcampus\_bphc}{Play Store}}
+\vspace{2pt}
+\location{Tech: Django, PostgreSQL REST, DigitalOcean}
+\vspace{2pt}
 \begin{tightemize}
-\item Vital part of student academics, allows students to stay updated with announcements from
-professors with 3000+ active users.
+ \item Designed and built the backend for SmartCampus, a mobile service to order food from one's hostel room.
+ \item 4000+ active student users placed orders and were notified for order pick-up.
+ \item Gross transactional value for a year (2 semesters) was Rs 3.1 crore.
 \end{tightemize}
 \subsectionsep
 
-\runsubsection{SmartCampus}
-\descript{| A Mobile app for a Smarter Campus}
-\location{September 2019 - Present}
+\runsubsection{CMS-Android}
+\descript{| Open Source Moodle Client for Android}
+\location{References: |
+	\href{https://github.com/crux-bphc/CMS-Android}{GitHub} \& \href{https://play.google.com/store/apps/details?id=crux.bphc.cms}{Play Store}}
+\vspace{2pt}
+\textbf{Tech:} Android, Java, Kotlin
+\vspace{2pt}
 \begin{tightemize}
- \item Designed and built the backend for SmartCampus, a mobile app to place orders for food in campus.
- \item Used Django and Django REST Framework to built the web application, PostgreSQL for the database.
- \item Deployed onto Digital Ocean.
+\item Developed and maintained a 3rd Party Moodle client.
+\item Allows students to enrol to courses, access, be notified, and provided offline access to courses contents
+on their phone.
+\item Vital part of academic life with 4000+ active student users.
 \end{tightemize}
+\subsectionsep
 \primarysectionsep  % end of section
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
