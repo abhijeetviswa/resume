@@ -1,0 +1,231 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez, Abhijeet Viswa
+% Based off of: https://github.com/jakegut/resume
+% License : Check LICENSE
+%------------------------
+
+\documentclass[a4paper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+		  {\small#3} & {\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Abhijeet Viswakumar} \\ \vspace{1pt}
+    \faPhone\;\small +91 807-820-4438 $|$
+    \faEnvelopeO\;\href{mailto:abhijeetviswa@gmail.com}{abhijeetviswa@gmail.com} $|$
+    \faLinkedinSquare\;\href{https://linkedin.com/in/abhijeetviswa}{abhijeetviswa} $|$
+    \faGithub\;\href{https://github.com/abhijeetviswa}{abhijeetviswa}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{About Me}
+\small{Result-oriented and passionate software engineer with 1 year of professional experience.
+Continuously learning about the latest technologies helps me quickly adapt to any situation.
+I'm an Open Source enthusiast and contributor. Interested in backend, infrastructure, and
+systems development.}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {BITS Pilani}{Hyderabad, India}
+			{B.E. Electronics and Instrumentation Engg. (CGPA: 8.29/10)}{Aug. 2018 -- July 2022}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+			{Amazon Web Services (AWS)}{Feb. 2022 -- Present}
+			{Software Engineer}{Bengaluru, India}
+      \resumeItemListStart
+						\resumeItem{Created a service to automatically parse maintenance emails and suppress relevant alarms.  Resulted in reduced operational load and approx 5 fewer high severity tickets weekly.}
+						\resumeItem{Reduced weekly effort spent on running manual and protacted regression tests by automating it.  This reduced the time spent on the test from 24 man-hours down to 8.}
+						\resumeItem{Worked on an easily deployable network virtualisation product that was integrated with automated network config CI/CD and regression testing pipelines. Ultimately reduced cost by replacing physical network labs.}
+      \resumeItemListEnd
+
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+    \resumeSubheading
+      {Oracle}{June 2021 -- July 2021}
+      {Software Engineering Intern}{Bengaluru, India}
+      \resumeItemListStart
+				\resumeItem{Improved performance and accessibility of historical data by adding support for
+				alternative data stores in the \emph{vmstat} command for Oracle Solaris.}
+				\resumeItem{Worked on improving documentation and man pages for CLI tools.}
+			\resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+% -------OPEN SOURCE CONTRIBUTION---------
+\section{Open Source Contribution}
+    \resumeSubHeadingListStart
+		\resumeProjectHeading{\textbf{Django} $|$ \emph{Python Web Framework}}{}
+		\resumeItemListStart
+				\resumeItem{\href{https://code.djangoproject.com/ticket/31246}{Reported} and
+				\href{https://github.com/django/django/pull/12434}{fixed}
+				a release blocking bug related to concurrent select and update on tables. This fixed a
+				previously undiscovered data corrupting bug.}
+				\resumeItem{\href{https://github.com/django/django/pull/12496}{Fixed} a bug
+				related to redundant SQL queries being generated.
+				This improved database performance when inserting new rows into tables.}
+				\resumeItem{
+				\href{https://github.com/django/django/pulls?q=author\%3Aabhijeetviswa}{Improved} Django
+				codebase and documentation.}
+		\resumeItemListEnd
+		\resumeSubHeadingListEnd
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+					{\textbf{SmartCampus} $|$ \emph{Mobile App for a Smarter
+					Campus}}{\textit{\href{https://play.google.com/store/apps/details?id=com.smartcampus\_bphc}{Play Store}}}
+          \resumeItemListStart
+						\resumeItem{Designed and built the backend for SmartCampus, a mobile service to order food from one's hostel room.}
+						\resumeItem{4000+ active student users placed orders and were notified for order pick-up.}
+						\resumeItem{Gross transaction value over a year (2 semesters) was Rs 3.1 crore.}
+						\resumeItem{References:
+						\href{https://play.google.com/store/apps/details?id=com.smartcampus\_bphc}{Play Store}}
+          \resumeItemListEnd
+      \resumeProjectHeading
+					{\textbf{CMS-Android} $|$ \emph{Open Source Android app for Moodle}}{}
+          \resumeItemListStart
+						\resumeItem{Developed and maintained a 3rd Party Moodle client.}
+						\resumeItem{Allows students to enrol to courses, access, be notified, and provided
+						offline access to courses contents on their phone.}
+						\resumeItem{Vital part of academic life with 4000+ active student users.}
+						\resumeItem{References: \href{https://github.com/crux-bphc/CMS-Android}{GitHub}
+						\& \href{https://play.google.com/store/apps/details?id=crux.bphc.cms}{Play Store}}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Python, Java, Kotlin, Bash, C/C++, SQL (Postgres)} \\
+     \textbf{AWS}{: Lambda, DynamoDB, ECS, Fargate, EC2, CDK} \\
+		 \textbf{Frameworks}{: Django, Django Rest Framework, Android} \\
+     \textbf{Developer Tools}{:Git, Docker, Github Actions, Postman} \\
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
+
