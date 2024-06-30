@@ -19,19 +19,9 @@
 \usepackage[english]{babel}
 \usepackage{tabularx}
 \usepackage{fontawesome}
+\usepackage{multicol}
 \input{glyphtounicode}
 
-
-%----------FONT OPTIONS----------
-% sans-serif
-% \usepackage[sfdefault]{FiraSans}
-% \usepackage[sfdefault]{roboto}
-% \usepackage[sfdefault]{noto-sans}
-% \usepackage[default]{sourcesanspro}
-
-% serif
-% \usepackage{CormorantGaramond}
-% \usepackage{charter}
 
 
 \pagestyle{fancy}
@@ -74,14 +64,14 @@
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
 		  {\small#3} & {\small #4} \\
-    \end{tabular*}\vspace{-7pt}
+    \end{tabular*}\vspace{-4pt}
 }
 
 \newcommand{\resumeSubSubheading}[2]{
     \item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
       \textit{\small#1} & \textit{\small #2} \\
-    \end{tabular*}\vspace{-7pt}
+    \end{tabular*}\vspace{-5pt}
 }
 
 \newcommand{\resumeProjectHeading}[2]{
@@ -122,11 +112,66 @@
 
 
 %-----------EDUCATION-----------
-\section{About Me}
-\small{Result-oriented and passionate software engineer with 1 year of professional experience.
-Continuously learning about the latest technologies helps me quickly adapt to any situation.
-I'm an Open Source enthusiast and contributor. Interested in backend, infrastructure, and
-systems development.}
+\begin{multicols}{2}
+    \section{About Me}
+    \small{Result-oriented and passionate software engineer with 2 years of professional experience.
+    Continuously learning about the latest technologies helps me quickly adapt to any situation. Open-source enthusiast, interested in backend,
+    infrastructure, and systems development.}
+  \columnbreak
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Python, Javascript, Typescript, Golang, Java, Kotlin, SQL} \\
+     \textbf{AWS}{: Lambda, DynamoDB, ECS, Fargate, EC2, CDK} \\
+		 \textbf{Frameworks}{: Django, Express Android} \\
+     \textbf{Databases}{:Postgres, MongoDB} \\
+    }}
+ \end{itemize}
+
+\end{multicols}
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Zluri}{March 2023 -- Present}
+      {Senior Software Engineer}{Bengaluru, India}
+    \resumeItemListStart
+      \resumeItem{Made the email notification pipeline more robust by introducing dedicated infrastructure with minimal cost and code migration. This drastically decreased email delivery latency during peak hours.}
+      \resumeItem{Led the effort in finalzing an ORM for a \textbf{Postgres} migration by conducting POCs and upskilling peers on its use.}
+      \resumeItem{Performed bug bashes in legacy modules, reducing on-call tickets, and improved maintanability by refactoring code and adding documentation.}
+      \resumeItem{Built an shadow API comparison in \textbf{Golang} system to compare the responses of our production API and Postgres-migrated API responses.}
+    \resumeItemListEnd
+
+   \resumeSubSubheading
+      {Software Engineer}{March 2023 - December 2023}
+      \resumeItemListStart
+        \resumeItem{Lead the development of a greenfield project, \textit{Access Reviews}. Delivered with exceptional code quality and a extensible design making agile future development possible, resulting in a robust new revenue stream.}
+        \resumeItem{Lead the charge in improving code quality by initiating \textbf{Typescript} into the codebase and improving maintainability.}
+        \resumeItem{Ideated \& implemented a development workflow for the organization using feature environments, automated testing etc. resulting in higher engineering productivity and faster project delivery.}
+      \resumeItem{Built a background job monitoring system that alerted on high severity incidents, reducing downtime and customer churn.}
+      \resumeItemListEnd
+   \resumeSubHeadingListEnd
+%-------------------------------------------
+
+    \resumeSubheading
+			{Amazon - AWS}{Feb. 2022 -- March. 2023}
+			{Software Engineer}{Bengaluru, India}
+      \resumeItemListStart
+						\resumeItem{Created a service to automatically parse maintenance emails and suppress relevant alarms.  Resulted in reduced operational load and approx 5 fewer high severity tickets weekly.}
+						\resumeItem{Reduced weekly effort spent on running manual and protacted regression tests by automating it.  This reduced the time spent on the test from 24 man-hours down to 8.}
+						\resumeItem{Worked on an easily deployable network virtualisation product that was integrated with automated network config CI/CD and regression testing pipelines. Ultimately reduced cost by replacing physical network labs.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Oracle}{June 2021 -- July 2021}
+      {Software Engineering Intern}{Bengaluru, India}
+      \resumeItemListStart
+				\resumeItem{Improved performance and accessibility of historical data by adding support for
+				alternative data stores in the \emph{vmstat} command for Oracle Solaris.}
+				% \resumeItem{Worked on improving documentation and man pages for CLI tools.}
+			\resumeItemListEnd
+  \resumeSubHeadingListEnd
 
 %-----------EDUCATION-----------
 \section{Education}
@@ -136,95 +181,42 @@ systems development.}
 			{B.E. Electronics and Instrumentation Engg. (CGPA: 8.29/10)}{Aug. 2018 -- July 2022}
   \resumeSubHeadingListEnd
 
-
-%-----------EXPERIENCE-----------
-\section{Experience}
-  \resumeSubHeadingListStart
-    \resumeSubheading
-			{Amazon Web Services (AWS)}{Feb. 2022 -- Present}
-			{Software Engineer}{Bengaluru, India}
-      \resumeItemListStart
-						\resumeItem{Created a service to automatically parse maintenance emails and suppress relevant alarms.  Resulted in reduced operational load and approx 5 fewer high severity tickets weekly.}
-						\resumeItem{Reduced weekly effort spent on running manual and protacted regression tests by automating it.  This reduced the time spent on the test from 24 man-hours down to 8.}
-						\resumeItem{Worked on an easily deployable network virtualisation product that was integrated with automated network config CI/CD and regression testing pipelines. Ultimately reduced cost by replacing physical network labs.}
-      \resumeItemListEnd
-
-% -----------Multiple Positions Heading-----------
-%    \resumeSubSubheading
-%     {Software Engineer I}{Oct 2014 - Sep 2016}
-%     \resumeItemListStart
-%        \resumeItem{Apache Beam}
-%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
-%     \resumeItemListEnd
-%    \resumeSubHeadingListEnd
-%-------------------------------------------
-
-    \resumeSubheading
-      {Oracle}{June 2021 -- July 2021}
-      {Software Engineering Intern}{Bengaluru, India}
-      \resumeItemListStart
-				\resumeItem{Improved performance and accessibility of historical data by adding support for
-				alternative data stores in the \emph{vmstat} command for Oracle Solaris.}
-				\resumeItem{Worked on improving documentation and man pages for CLI tools.}
-			\resumeItemListEnd
-
-  \resumeSubHeadingListEnd
-
-
 % -------OPEN SOURCE CONTRIBUTION---------
 \section{Open Source Contribution}
     \resumeSubHeadingListStart
 		\resumeProjectHeading{\textbf{Django} $|$ \emph{Python Web Framework}}{}
 		\resumeItemListStart
-				\resumeItem{\href{https://code.djangoproject.com/ticket/31246}{Reported} and
-				\href{https://github.com/django/django/pull/12434}{fixed}
-				a release blocking bug related to concurrent select and update on tables. This fixed a
-				previously undiscovered data corrupting bug.}
+        \resumeItem{
+        % {\href{https://code.djangoproject.com/ticket/31246}{Reported} and
+				\href{https://github.com/django/django/pull/12434}{Fixed}
+        a data-corrupting bug related to concurrent select and update on Postgres tables.}
 				\resumeItem{\href{https://github.com/django/django/pull/12496}{Fixed} a bug
-				related to redundant SQL queries being generated.
-				This improved database performance when inserting new rows into tables.}
-				\resumeItem{
-				\href{https://github.com/django/django/pulls?q=author\%3Aabhijeetviswa}{Improved} Django
-				codebase and documentation.}
+				that issued redundant SQL queries, improving performance during insertions.}
+				% \resumeItem{
+				% \href{https://github.com/django/django/pulls?q=author\%3Aabhijeetviswa}{Improved} Django
+				% codebase and documentation.}
 		\resumeItemListEnd
 		\resumeSubHeadingListEnd
+
 %-----------PROJECTS-----------
 \section{Projects}
     \resumeSubHeadingListStart
+      % \resumeProjectHeading
+					% {\textbf{SmartCampus} $|$ \emph{Mobile App for a Smarter
+					% Campus}}{\textit{\href{https://play.google.com/store/apps/details?id=com.smartcampus\_bphc}}}
+     %      \resumeItemListStart
+					% 	\resumeItem{Designed and built the backend for SmartCampus, a mobile service to order food from one's hostel room.}
+					% 	\resumeItem{4000+ active student users placed orders and were notified for order pick-up.}
+					% 	\resumeItem{Gross transaction value over a year (2 semesters) was Rs 3.1 crore.}
+     %      \resumeItemListEnd
       \resumeProjectHeading
-					{\textbf{SmartCampus} $|$ \emph{Mobile App for a Smarter
-					Campus}}{\textit{\href{https://play.google.com/store/apps/details?id=com.smartcampus\_bphc}{Play Store}}}
+          {\textbf{CMS-Android} $|$ \emph{Open Source Android app for Moodle} $|$ \textit{Refs:} {\href{https://github.com/crux-bphc/CMS-Android}{\normalcolor\faGithub\;}
+            \href{https://play.google.com/store/apps/details?id=crux.bphc.cms}{\normalcolor\faPlay\;}}}{}
           \resumeItemListStart
-						\resumeItem{Designed and built the backend for SmartCampus, a mobile service to order food from one's hostel room.}
-						\resumeItem{4000+ active student users placed orders and were notified for order pick-up.}
-						\resumeItem{Gross transaction value over a year (2 semesters) was Rs 3.1 crore.}
-						\resumeItem{References:
-						\href{https://play.google.com/store/apps/details?id=com.smartcampus\_bphc}{Play Store}}
-          \resumeItemListEnd
-      \resumeProjectHeading
-					{\textbf{CMS-Android} $|$ \emph{Open Source Android app for Moodle}}{}
-          \resumeItemListStart
-						\resumeItem{Developed and maintained a 3rd Party Moodle client.}
-						\resumeItem{Allows students to enrol to courses, access, be notified, and provided
-						offline access to courses contents on their phone.}
-						\resumeItem{Vital part of academic life with 4000+ active student users.}
-						\resumeItem{References: \href{https://github.com/crux-bphc/CMS-Android}{GitHub}
-						\& \href{https://play.google.com/store/apps/details?id=crux.bphc.cms}{Play Store}}
+						\resumeItem{Developed and maintained a 3rd Party Moodle client, allowing students to enrol and access course material.}
+						\resumeItem{Vital part of acdemic life with 4000+ active student users, notifying students about notices and providing offline access to content.}
           \resumeItemListEnd
     \resumeSubHeadingListEnd
-
-%
-%-----------PROGRAMMING SKILLS-----------
-\section{Technical Skills}
- \begin{itemize}[leftmargin=0.15in, label={}]
-    \small{\item{
-     \textbf{Languages}{: Python, Java, Kotlin, Bash, C/C++, SQL (Postgres)} \\
-     \textbf{AWS}{: Lambda, DynamoDB, ECS, Fargate, EC2, CDK} \\
-		 \textbf{Frameworks}{: Django, Django Rest Framework, Android} \\
-     \textbf{Developer Tools}{:Git, Docker, Github Actions, Postman} \\
-    }}
- \end{itemize}
-
 
 %-------------------------------------------
 \end{document}
