@@ -1,11 +1,18 @@
+uname=$(shell uname)
+ifeq ($(shell uname),Darwin)
+  WATCHCMD=fswatch -1 .
+else
+  WATCHCMD=inotifywait -qre close_write .;
+endif
+
 # Default target
 resume: resume.tex resume.cls
-	xelatex $(OPTS) resume.tex
+	pdflatex $(OPTS) resume.tex
 
 watch:
 	while true; do \
         OPTS=-interaction=nonstopmode make resume; \
-        inotifywait -qre close_write .; \
+        $(WATCHCMD); \
     done
 
 clean:
