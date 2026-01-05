@@ -14,3 +14,4 @@
 *.dvi
 .kile/
 *.synctex.gz
+*.DS_Store

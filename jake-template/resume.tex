@@ -23,7 +23,6 @@
 \input{glyphtounicode}
 
 
-
 \pagestyle{fancy}
 \fancyhf{} % clear all header and footer fields
 \fancyfoot{}
@@ -63,7 +62,7 @@
   \vspace{-2pt}\item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
-		  {\small#3} & {\small #4} \\
+		  \textit{\small#3} & \textit{\small #4} \\
     \end{tabular*}\vspace{-4pt}
 }
 
@@ -111,45 +110,35 @@
 \end{center}
 
 
-%-----------EDUCATION-----------
-\begin{multicols}{2}
-    \section{About Me}
-    \small{Result-oriented and passionate software engineer with \textbf{two years} of professional experience.
-    Continuously learning about the latest technologies helps me quickly adapt to any situation. Open-source enthusiast, interested in backend,
-    infrastructure, and systems development.}
-  \columnbreak
-\section{Technical Skills}
- \begin{itemize}[leftmargin=0.15in, label={}]
-    \small{\item{
-     \textbf{Languages}{: Python, Javascript, Typescript, Golang, Java, Kotlin, SQL} \\
-     \textbf{AWS}{: Lambda, DynamoDB, ECS, Fargate, EC2, CDK} \\
-		 \textbf{Frameworks}{: Django, Express, Android} \\
-     \textbf{Databases}{:Postgres, MongoDB} \\
-    }}
- \end{itemize}
-
-\end{multicols}
-
 %-----------EXPERIENCE-----------
 \section{Experience}
   \resumeSubHeadingListStart
     \resumeSubheading
-      {Zluri}{March 2023 -- Present}
+      {Amazon}{July 2025 -- Present}
+      {Software Development Engineer 2}{Bengaluru, India}
+    \resumeItemListStart
+      \resumeItem{Implemented customer-managed encryption key support across multiple microservices, \textbf{solving complex security challenges} and \textbf{educated the team} on encryption implementations for long term maintanability.}
+      \resumeItem{Designed comprehensive service metrics and monitoring systems, unblocking \textbf{operational readiness} reviews and \textbf{improving system reliability} through better error handling.}
+    \resumeItemListEnd
+%-------------------------------------------
+
+    \resumeSubheading
+      {Zluri}{January 2024 -- March 2025}
       {Senior Software Engineer}{Bengaluru, India}
     \resumeItemListStart
-      \resumeItem{Improved the notification service through infrastructure improvements and minimal impact. This signficantly decreased delivery latency from \bf{2 hours to less than 1 min} during peak hours.}
+      \resumeItem{Improved the notification service through infrastructure improvements, decreasing delivery latency from \bf{2 hours to less than 1 min} during peak hours.}
       \resumeItem{Led the effort in finalzing a \textbf{Postgres} ORM by conducting POCs and upskilling peers. This resulted in improved code quality and reducing delivery time.}
-      \resumeItem{Built a API shadow testing framework as part of the database migration. Automated alerts and reports provided visibility into failing APIs, helping fasttrack fixes and \textbf{reducing the lead time of the project by at least 25\%}.}
-      \resumeItem{Performed bug bashes in legacy modules, \textbf{reducing on-call tickets by 50\%}. Also led initiatives in improving code quality and reducing tech debt.}
+      \resumeItem{Built a API shadow testing framework as part of the database migration. Automated alerts and reports provided visibility into failing APIs, \textbf{reducing the lead time of the project by at least 25\%}.}
+      \resumeItem{Performed bug bashes in legacy modules and led code quality initiatives, \textbf{reducing on-call tickets by 50\%} and reducing tech debt.}
     \resumeItemListEnd
 
    \resumeSubSubheading
       {Software Engineer}{March 2023 - December 2023}
       \resumeItemListStart
-        \resumeItem{Lead the development of a greenfield project, \textit{Access Reviews} over 3 months. Delivered with exceptional code quality and a extensible design. The MVP built was was a great success with customers and \textbf{created a strong new revenue stream} and further investments in the product.}
+        \resumeItem{Lead the development of a greenfield project, \textit{\href{https://www.zluri.com/access-reviews}{Access Reviews}} over 3 months. Delivered with exceptional code quality and a extensible design. The MVP \textbf{created a strong new revenue stream} and further investments in the product.}
         \resumeItem{Lead the charge in improving code quality by leading the migration to \textbf{Typescript} and introducing various other linting and code clean up processes, improving long term maintainability.}
         \resumeItem{Ideated \& implemented a development workflow for the organization using feature environments, automated testing etc. This became a bedrock of all engineering efforts, \bf{boosting engineering productivity by upto 30\%} and improved confidence in product quality.}
-      \resumeItem{Built a monitoring and alerting system for all backgrounds jobs in the organization. Alerts helped on-calls with proactive resolution preventing down time and \textbf{reduced customer complaints by 50\%}.}
+      \resumeItem{Built monitoring and alerting systems for all background jobs in the organization. Alerts helped on-calls with proactive resolution preventing down time and \textbf{reduced customer complaints by 50\%}.}
       \resumeItemListEnd
 %-------------------------------------------
 
@@ -162,14 +151,29 @@
 						\resumeItem{Worked on an easily deployable network virtualisation product that was integrated with automated network config CI/CD and regression testing pipelines. The project \textbf{reduced cost} of physical infrastructure by providing for virtualized networking labs.}
       \resumeItemListEnd
 
-    \resumeSubheading
-      {Oracle}{June 2021 -- July 2021}
-      {Software Engineering Intern}{Bengaluru, India}
-      \resumeItemListStart
-				\resumeItem{Improved performance and accessibility of historical data by adding support for
-				alternative data stores in the \emph{vmstat} command for Oracle Solaris.}
-			\resumeItemListEnd
+			%  \resumeSubheading
+			%    {Oracle}{June 2021 -- July 2021}
+			%    {Software Engineering Intern}{Bengaluru, India}
+			%    \resumeItemListStart
+			% 	\resumeItem{Improved performance and accessibility of historical data by adding support for
+			% 	alternative data stores in the \emph{vmstat} command for Oracle Solaris.}
+			% \resumeItemListEnd
   \resumeSubHeadingListEnd
+
+%-----------TECHNICAL SKILLS-----------
+  % \section{About Me}
+  % \small{Software engineer with \textbf{two years} of professional experience.
+  % Open-source enthusiast, interested in backend,
+  % infrastructure, and systems development.}
+% \columnbreak
+\section{Technical Skills}
+    \small{
+     \textbf{Languages}{: Python, Javascript, Typescript, Golang, Java, Kotlin, SQL} \\
+     \textbf{AWS}{: Lambda, DynamoDB, ECS, Fargate, EC2, CDK} \\
+		 % \textbf{Frameworks}{: Django, Express, Android} \\
+		 %   \textbf{Databases}{:Postgres, MongoDB} \\
+    }
+
 
 %-----------EDUCATION-----------
 \section{Education}
@@ -180,20 +184,20 @@
   \resumeSubHeadingListEnd
 
 % -------OPEN SOURCE CONTRIBUTION---------
-\section{Open Source Contribution}
+\section{Open Source Contribution \& Projects}
     \resumeSubHeadingListStart
 		\resumeProjectHeading{\textbf{Django} $|$ \emph{Python Web Framework}}{}
 		\resumeItemListStart
-        \resumeItem{
-        % {\href{https://code.djangoproject.com/ticket/31246}{Reported} and
-				\href{https://github.com/django/django/pull/12434}{Fixed}
-        a data-corrupting bug related to concurrent select and update on Postgres tables.}
-				\resumeItem{\href{https://github.com/django/django/pull/12496}{Fixed} a bug
-				that issued redundant SQL queries, improving performance during insertions.}
-				% \resumeItem{
-				% \href{https://github.com/django/django/pulls?q=author\%3Aabhijeetviswa}{Improved} Django
-				% codebase and documentation.}
+        \resumeItem{\href{https://github.com/django/django/pull/12434}{Fixed} a data-corrupting bug related to concurrent select and update on Postgres tables and \href{https://github.com/django/django/pull/12496}{fixed} a bug that issued redundant SQL queries, improving performance during insertions.}
 		\resumeItemListEnd
+      \resumeProjectHeading
+					{\textbf{SmartCampus} $|$ \emph{Mobile App for a Smarter
+					Campus}}{\textit{\href{https://play.google.com/store/apps/details?id=com.smartcampus\_bphc}}}
+          \resumeItemListStart
+						\resumeItem{Designed and built the backend for SmartCampus, a mobile service to order food from one's hostel room.}
+						\resumeItem{4000+ active student users placed orders and were notified for order pick-up.}
+						\resumeItem{Gross transaction value over a year (2 semesters) was Rs 3.1 crore.}
+          \resumeItemListEnd
 		\resumeSubHeadingListEnd
 
 %-----------PROJECTS-----------
