@@ -44,8 +44,8 @@
 
 % Sections formatting
 \titleformat{\section}{
-  \vspace{-4pt}\scshape\raggedright\large
-}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+  \vspace{-6pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-6pt}]
 
 % Ensure that generate pdf is machine readable/ATS parsable
 \pdfgentounicode=1
@@ -54,7 +54,7 @@
 % Custom commands
 \newcommand{\resumeItem}[1]{
   \item\small{
-    {#1 \vspace{-2pt}}
+    {#1 \vspace{-3pt}}
   }
 }
 
@@ -63,7 +63,7 @@
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
 		  \textit{\small#3} & \textit{\small #4} \\
-    \end{tabular*}\vspace{-4pt}
+    \end{tabular*}\vspace{-7pt}
 }
 
 \newcommand{\resumeSubSubheading}[2]{
@@ -117,8 +117,10 @@
       {Amazon}{July 2025 -- Present}
       {Software Development Engineer 2}{Bengaluru, India}
     \resumeItemListStart
-      \resumeItem{Implemented customer-managed encryption key support across multiple microservices, \textbf{solving complex security challenges} and \textbf{educated the team} on encryption implementations for long term maintainability.}
-      \resumeItem{Designed comprehensive service metrics and monitoring systems, unblocking \textbf{operational readiness} reviews and \textbf{improving system reliability} through better error handling.}
+      \resumeItem{Designed and delivered an \textbf{end-to-end replacement} of a legacy feed health aggregation and alerting system. I built the core aggregation logic, deployed infrastructure across \textbf{3 AWS regions}, processing \textbf{1M+ feed health signals daily}, and executed a \textbf{staged rollout}.}
+      \resumeItem{Designed a Step Functions-based deferred alerting system that \textbf{prevents false-positive tickets} during transient failures lasting under 15 minutes. Solved existing race conditions in event-driven delivery using monotonic ordering keys, conditional writes, and workflow ownership checks.}
+      \resumeItem{Implemented customer-managed encryption key support across multiple microservices, \textbf{solving complex and launch-blocking security challenges} and \textbf{educated the team} on encryption implementations for long term maintainability.}
+      \resumeItem{Drove operational excellence: designed service metrics and composite alarms for operational readiness, upgraded Java runtimes, fixed flaky tests, tuned DLQ alarms, and resolved pagination failures — \textbf{reducing operational noise} for on-call engineers.}
     \resumeItemListEnd
 %-------------------------------------------
 
@@ -127,8 +129,7 @@
       {Senior Software Engineer}{Bengaluru, India}
     \resumeItemListStart
       \resumeItem{Improved the notification service through infrastructure improvements, decreasing delivery latency from \bf{2 hours to less than 1 min} during peak hours.}
-      \resumeItem{Led the effort in finalzing a \textbf{Postgres} ORM by conducting POCs and upskilling peers. This resulted in improved code quality and reducing delivery time.}
-      \resumeItem{Built a API shadow testing framework as part of the database migration. Automated alerts and reports provided visibility into failing APIs, \textbf{reducing the lead time of the project by at least 25\%}.}
+      \resumeItem{Led the effort in finalizing a \textbf{Postgres} ORM and built an API shadow testing framework as part of a database migration. Automated alerts and reports provided visibility into failing APIs, \textbf{reducing the lead time of the project by at least 25\%}.}
       \resumeItem{Performed bug bashes in legacy modules and led code quality initiatives, \textbf{reducing on-call tickets by 50\%} and reducing tech debt.}
     \resumeItemListEnd
 
@@ -136,9 +137,8 @@
       {Software Engineer}{March 2023 - December 2023}
       \resumeItemListStart
         \resumeItem{Lead the development of a greenfield project, \textit{\href{https://www.zluri.com/access-reviews}{Access Reviews}} over 3 months. Delivered with exceptional code quality and a extensible design. The MVP \textbf{created a strong new revenue stream} and further investments in the product.}
-        \resumeItem{Lead the charge in improving code quality by leading the migration to \textbf{Typescript} and introducing various other linting and code clean up processes, improving long term maintainability.}
         \resumeItem{Ideated \& implemented a development workflow for the organization using feature environments, automated testing etc. This became a bedrock of all engineering efforts, \bf{boosting engineering productivity by upto 30\%} and improved confidence in product quality.}
-      \resumeItem{Built monitoring and alerting systems for all background jobs in the organization. Alerts helped on-calls with proactive resolution preventing down time and \textbf{reduced customer complaints by 50\%}.}
+        \resumeItem{Led code quality initiatives including migration to \textbf{Typescript}, linting processes, and monitoring/alerting for all background jobs — \textbf{reduced customer complaints by 50\%} through proactive on-call resolution.}
       \resumeItemListEnd
 %-------------------------------------------
 
@@ -148,7 +148,7 @@
       \resumeItemListStart
             \resumeItem{Created a service to automatically parse maintenance notifications and suppress relevant alarms. This \textbf{brought down high severity tickets by 50\% week over week}.}
             \resumeItem{Reduced weekly effort spent on running manual and protacted regression tests by automating it, \textbf{reducing time spent on from 24 developer-hours down to 8 hours} every week.}
-						\resumeItem{Worked on an easily deployable network virtualisation product that was integrated with automated network config CI/CD and regression testing pipelines. The project \textbf{reduced cost} of physical infrastructure by providing for virtualized networking labs.}
+						\resumeItem{Worked on an easily deployable network virtualisation product that was integrated with automated network config CI/CD and regression testing pipelines, \textbf{reducing cost} by replacing physical infrastructure with virtualized networking labs.}
       \resumeItemListEnd
 
 			%  \resumeSubheading
@@ -183,6 +183,7 @@
 			{B.E. Electronics and Instrumentation Engg. (CGPA: 8.29/10)}{Aug. 2018 -- July 2022}
   \resumeSubHeadingListEnd
 
+\vspace{2pt}
 % -------OPEN SOURCE CONTRIBUTION---------
 \section{Open Source Contribution \& Projects}
     \resumeSubHeadingListStart
@@ -190,13 +191,12 @@
 		\resumeItemListStart
         \resumeItem{\href{https://github.com/django/django/pull/12434}{Fixed} a data-corrupting bug related to concurrent select and update on Postgres tables and \href{https://github.com/django/django/pull/12496}{fixed} a bug that issued redundant SQL queries, improving performance during insertions.}
 		\resumeItemListEnd
+      \vspace{2pt}
       \resumeProjectHeading
 					{\textbf{SmartCampus} $|$ \emph{Mobile App for a Smarter
 					Campus}}{\textit{\href{https://play.google.com/store/apps/details?id=com.smartcampus\_bphc}}}
           \resumeItemListStart
-						\resumeItem{Designed and built the backend for SmartCampus, a mobile service to order food from one's hostel room.}
-						\resumeItem{4000+ active student users placed orders and were notified for order pick-up.}
-						\resumeItem{Gross transaction value over a year (2 semesters) was Rs 3.1 crore.}
+						\resumeItem{Designed and built the backend for a campus food ordering app — 4000+ active users, Rs 3.1 crore in annual transactions.}
           \resumeItemListEnd
 		\resumeSubHeadingListEnd
 
