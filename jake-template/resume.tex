@@ -117,29 +117,22 @@
       {Amazon}{July 2025 -- Present}
       {Software Development Engineer 2}{Bengaluru, India}
     \resumeItemListStart
-      \resumeItem{Designed and delivered an \textbf{end-to-end replacement} of a legacy feed health aggregation and alerting system. I built the core aggregation logic, deployed infrastructure across \textbf{3 AWS regions}, processing \textbf{1M+ feed health signals daily}, and executed a \textbf{staged rollout}.}
+      \resumeItem{Designed and delivered an \textbf{end-to-end replacement} of a legacy feed health aggregation and alerting system. Built the core aggregation logic, deployed infrastructure across \textbf{3 AWS regions} processing \textbf{1M+ feed health signals daily}, and executed a \textbf{staged rollout}.}
       \resumeItem{Designed a Step Functions-based deferred alerting system that \textbf{prevents false-positive tickets} during transient failures lasting under 15 minutes. Solved existing race conditions in event-driven delivery using monotonic ordering keys, conditional writes, and workflow ownership checks.}
-      \resumeItem{Implemented customer-managed encryption key support across multiple microservices, \textbf{solving complex and launch-blocking security challenges} and \textbf{educated the team} on encryption implementations for long term maintainability.}
-      \resumeItem{Drove operational excellence: designed service metrics and composite alarms for operational readiness, upgraded Java runtimes, fixed flaky tests, tuned DLQ alarms, and resolved pagination failures — \textbf{reducing operational noise} for on-call engineers.}
+      \resumeItem{Implemented customer-managed encryption key support across multiple microservices, \textbf{solving launch-blocking security challenges} and \textbf{established encryption patterns} adopted by the team for long term maintainability.}
+      \resumeItem{Designed service metrics and composite alarms for operational readiness; upgraded Java runtimes, fixed flaky tests, tuned DLQ alarms, and resolved pagination failures, \textbf{reducing operational noise} for on-call engineers.}
     \resumeItemListEnd
 %-------------------------------------------
 
     \resumeSubheading
-      {Zluri}{January 2024 -- March 2025}
+      {Zluri}{March 2023 -- March 2025}
       {Senior Software Engineer}{Bengaluru, India}
     \resumeItemListStart
-      \resumeItem{Improved the notification service through infrastructure improvements, decreasing delivery latency from \bf{2 hours to less than 1 min} during peak hours.}
-      \resumeItem{Led the effort in finalizing a \textbf{Postgres} ORM and built an API shadow testing framework as part of a database migration. Automated alerts and reports provided visibility into failing APIs, \textbf{reducing the lead time of the project by at least 25\%}.}
-      \resumeItem{Performed bug bashes in legacy modules and led code quality initiatives, \textbf{reducing on-call tickets by 50\%} and reducing tech debt.}
+      \resumeItem{Led the development of a greenfield project, \textit{\href{https://www.zluri.com/access-reviews}{Access Reviews}}, over 3 months. The MVP \textbf{created a new revenue stream}, growing the product team from 2 to 10 engineers.}
+      \resumeItem{Accelerated a database migration by building an API shadow testing framework and finalizing a \textbf{Postgres} ORM. Automated alerts surfaced failing APIs, \textbf{reducing project lead time by 25\%}.}
+      \resumeItem{Ideated \& implemented a development workflow for the organization using feature environments and automated testing, \textbf{boosting engineering productivity by up to 30\%} and improving confidence in product quality.}
+      \resumeItem{Improved the notification service through infrastructure improvements, decreasing delivery latency from \textbf{2 hours to less than 1 min} during peak hours.}
     \resumeItemListEnd
-
-   \resumeSubSubheading
-      {Software Engineer}{March 2023 - December 2023}
-      \resumeItemListStart
-        \resumeItem{Lead the development of a greenfield project, \textit{\href{https://www.zluri.com/access-reviews}{Access Reviews}} over 3 months. Delivered with exceptional code quality and a extensible design. The MVP \textbf{created a strong new revenue stream} and further investments in the product.}
-        \resumeItem{Ideated \& implemented a development workflow for the organization using feature environments, automated testing etc. This became a bedrock of all engineering efforts, \bf{boosting engineering productivity by upto 30\%} and improved confidence in product quality.}
-        \resumeItem{Led code quality initiatives including migration to \textbf{Typescript}, linting processes, and monitoring/alerting for all background jobs — \textbf{reduced customer complaints by 50\%} through proactive on-call resolution.}
-      \resumeItemListEnd
 %-------------------------------------------
 
     \resumeSubheading
@@ -147,17 +140,16 @@
 			{Software Engineer}{Bengaluru, India}
       \resumeItemListStart
             \resumeItem{Created a service to automatically parse maintenance notifications and suppress relevant alarms. This \textbf{brought down high severity tickets by 50\% week over week}.}
-            \resumeItem{Reduced weekly effort spent on running manual and protacted regression tests by automating it, \textbf{reducing time spent on from 24 developer-hours down to 8 hours} every week.}
-						\resumeItem{Worked on an easily deployable network virtualisation product that was integrated with automated network config CI/CD and regression testing pipelines, \textbf{reducing cost} by replacing physical infrastructure with virtualized networking labs.}
+            \resumeItem{Automated protracted regression tests that previously required manual execution, \textbf{reducing weekly effort from 24 developer-hours to 8}.}
+						\resumeItem{Built the CLI frontend for a network virtualization product integrated with automated config CI/CD and regression pipelines, \textbf{replacing planned physical lab infrastructure}.}
       \resumeItemListEnd
 
-			%  \resumeSubheading
-			%    {Oracle}{June 2021 -- July 2021}
-			%    {Software Engineering Intern}{Bengaluru, India}
-			%    \resumeItemListStart
-			% 	\resumeItem{Improved performance and accessibility of historical data by adding support for
-			% 	alternative data stores in the \emph{vmstat} command for Oracle Solaris.}
-			% \resumeItemListEnd
+    \resumeSubheading
+      {Oracle}{June 2021 -- July 2021}
+      {Software Engineering Intern}{Bengaluru, India}
+      \resumeItemListStart
+        \resumeItem{Improved performance and accessibility of historical data by adding support for alternative data stores in the \emph{vmstat} command for Oracle Solaris.}
+      \resumeItemListEnd
   \resumeSubHeadingListEnd
 
 %-----------TECHNICAL SKILLS-----------
@@ -169,9 +161,9 @@
 \section{Technical Skills}
     \small{
      \textbf{Languages}{: Python, Javascript, Typescript, Golang, Java, Kotlin, SQL} \\
-     \textbf{AWS}{: Lambda, DynamoDB, ECS, Fargate, EC2, CDK} \\
-		 % \textbf{Frameworks}{: Django, Express, Android} \\
-		 %   \textbf{Databases}{:Postgres, MongoDB} \\
+     \textbf{AWS}{: Lambda, DynamoDB, Step Functions, ECS, Fargate, EC2, CDK} \\
+     \textbf{Databases}{: Postgres, MongoDB, DynamoDB} \\
+     \textbf{Tools/Infra}{: Docker, Terraform, Git, CI/CD} \\
     }
 
 
